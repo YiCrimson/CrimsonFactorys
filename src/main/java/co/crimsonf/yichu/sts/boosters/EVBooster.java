@@ -14,7 +14,7 @@ public class EVBooster implements IBooster {
         float evSpeed = pokemon.getByte(NbtKeys.EV_SPEED);
         float evSAtk = pokemon.getByte(NbtKeys.EV_SPECIAL_ATTACK);
         float evSDef = pokemon.getByte(NbtKeys.EV_SPECIAL_DEFENCE);
-        return Math.round(((evHP + evDef + evAtk + evSpeed + evSAtk + evSDef) / 510) * 100) * STSConfig.General.moneyPerEV;
+        return Math.round(((evHP + evDef + evAtk + evSpeed + evSAtk + evSDef) / 510f) * 100) * STSConfig.General.moneyPerEV;
     }
 
     @Override
